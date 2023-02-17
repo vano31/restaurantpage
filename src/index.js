@@ -1,5 +1,6 @@
 import {menu} from './menu.js';
 import {contact} from './contact.js';
+import './style.css';
 
 
 function removeAllChildNodes(parent) {
@@ -30,14 +31,7 @@ let menutab = document.createElement('button');
 menutab.textContent = 'Menu';
 menutab.onclick = function() {
     
-    /*
-    console.log(title);
-    document.body.removeChild(title); 
-    document.body.removeChild(description); 
-    document.body.removeChild(hours); 
-    document.body.removeChild(place); 
-    */
-
+ 
     removeAllChildNodes((document.body));
     header.appendChild(hometab);
     header.appendChild(menutab);
@@ -51,13 +45,6 @@ let contacttab = document.createElement('button');
 contacttab.textContent = 'Contact';
 contacttab.onclick = function() {
 
-    /*
-    console.log(title);
-    document.body.removeChild(title); 
-    document.body.removeChild(description); 
-    document.body.removeChild(hours); 
-    document.body.removeChild(place); 
-    */
 
     removeAllChildNodes((document.body));
     header.appendChild(hometab);
@@ -101,7 +88,6 @@ let home = function() {
 
     return{title, description, hours, place}
 
-
 }
 
 let {title, description, hours, place} = home();
@@ -109,5 +95,4 @@ let {title, description, hours, place} = home();
 
 
 
-//menu();
 

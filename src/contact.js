@@ -1,7 +1,6 @@
 let contact = function() {
 
 
-
 console.log('Say my name.');
 console.log('...You\'re Heisenberg.');
 console.log('You\'re goddam right.');

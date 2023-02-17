@@ -1,7 +1,8 @@
 const path = require('path');
+//const { menu } = require('./src/menu');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/index.js', 
   devtool: 'inline-source-map',
   output: {
     filename: 'main.js',
